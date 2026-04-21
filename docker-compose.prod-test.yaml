@@ -233,7 +233,7 @@ services:
   evo_processor:
     image: evoapicloud/evo-ai-processor-community:latest
     ports:
-      - "8000:8000"
+      - "8001:8000"
     environment:
       POSTGRES_CONNECTION_STRING: postgresql://postgres:evoai_dev_password@evo_postgres:5432/evo_community
       REDIS_HOST: evo_redis
